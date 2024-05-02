@@ -182,7 +182,7 @@ class NcbiTaxonomyTree(object):
             result = [ self._getDescendants(child) for child in children] 
             result.insert(0, taxid)
         else:
-            result = taxid
+            result = [taxid]
         return result
 
     def getDescendants(self, taxids): 
